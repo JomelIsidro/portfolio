@@ -5,9 +5,434 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-4.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="library/google-font/poppins.css">
+    <link rel="stylesheet" href="library/lightbox/lightbox.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Portfolio s</h3>
-    <p>lorem,</p>
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <div>
+            <img class="logo" src="images/logo3.png" alt=""> 
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#services" class="nav-item nav-link">Services</a>
+                <a href="#skills" class="nav-item nav-link">Skills</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            </div>
+
+            <a href="#" class="btn btn-success btn-menu d-none d-lg-block" >Hire Me</a>
+        </div>
+    </nav>
+
+    <header class="header mt-70" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mt-180 mt-lg-50 mt-xl-150 order-lg-0 order-1">
+                    
+                    <h3 class="header__greeting mb-3 text-white ml-lg-190 ml-lg-100 ml-md-70 ml-sm-50 ml-sm-20">Hello, I'm</h3>
+                    <h1 class="text-uppercase mb-2 text-white ml-lg-190 ml-lg-100 ml-md-70 ml-sm-50 ml-sm-20">Jomel Isidro</h1>
+
+                    <h4 class="mb-4 text-white ml-lg-190 ml-lg-100 ml-md-70 ml-sm-50 ml-sm-20">Web Developer</h4>
+
+                    <div class="d-flex align-items-center mb-2 ml-lg-190 ml-lg-100 ml-md-70 ml-sm-50 ml-sm-20">
+                        <div>
+                            <i class="fa fa-envelope text-white header__icons"></i>
+                        </div>
+                        <div class="ml-3">
+                            <span class="text-white">jomelisidro.1998@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2 ml-lg-190 ml-lg-100 ml-md-70 ml-sm-50 ml-sm-20">
+                        <div>
+                            <i class="fa fa-phone text-white header__icons"></i>
+                        </div>
+                        <div class="ml-3">
+                            <span class="text-white">+639273221531</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-5 ml-lg-190 ml-lg-100 ml-md-70 ml-sm-50 ml-sm-20">
+                        <div>
+                            <i class="fa-solid fa-location-dot text-white header__icons"></i>
+                        </div>
+                        <div class="ml-3">
+                            <span class="text-white">Sta Rita Olongapo City, Philippines</span>
+                        </div>
+                    </div>
+
+                    <div class="text-lg-center-custom ml-lg-myresume-btn">
+                        <a target="_blank" href="resume.pdf" class="btn-custom btn-custom--white btn-custom--animated">My Resume</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-180 mt-lg-50 mt-xl-150 text-center">
+                    <img class="rounded-circle header__img-profile" src="images/profile.png" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- About  -->
+        <div class="container mt-100" id="about">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-center"> 
+                        <img class="main__img-programming" src="images/programming.svg" alt="Programming">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-25">
+                    <h1 class="main__about--aboutme">About Me</h1>
+                    <p class="mt-15 main__about--paragraph">
+                        I am a graduate of Bachelor of Science in Information and Technology with good experience in website 
+                        development. I am a web developer with a vast array of knowledge in many different programming 
+                        languages and database administration.
+                    </p>
+                    <a href="#" class="btn-text">Learn more &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services  -->
+        <div class="text-center mt-100" id="services">
+            <h2 class="heading-secondary">
+                Services
+            </h2>
+        </div>
+            
+        <div class="main__services">
+            <div class="container">
+                <div class="row">
+
+                  <div class="col-12 col-lg-4 mb-5">
+                    <div class="card main__services-box">
+                        <i class="fa fa-code iron-color text-success main__services-box__icon"></i>
+                        <h3 class="heading-tertiary mt-4">Web Development</h3>
+                        <p class="main__service--box__text mt-4">
+                            Plan, create and code websites. Responsible for creating the design of a website and its mobile responsive. Also working on a brand new website or updating an already existing site.
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-4 mb-5">
+                    <div class="card main__services-box">
+                        <i class="fa fa-database text-success main__services-box__icon"></i>
+                        <h3 class="heading-tertiary mt-4">Database Management</h3>
+                        <p class="main__service--box__text mt-4">
+                            Responsible for developing and maintaining an organizations' systems that store and organize data for companies. By implementing several security programs, I ensure the safety of stored data.
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-4 mb-5">
+                    <div class="card main__services-box">
+                        <i class="fa fa-bullseye purple-color text-success main__services-box__icon"></i>
+                        <h3 class="heading-tertiary mt-4">UI Design</h3>
+                        <p class="main__service--box__text mt-4">
+                            Responsible for creating interactive programs that enhance a customer's experience with a brand and facilitate an enjoyable experience on the business's website and convenient for users.
+                        </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+        </div>
+
+        <!-- Skills  -->
+        <div class="text-center mt-150" id="skills">
+            <h2 class="heading-secondary">
+                Skills
+            </h2>
+        </div>
+
+        <div class="container mt-50">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                                        
+                        <div class="progress">
+                            <div style="width: 95%" class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS / BOOTSTRAP / TAILWIND</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                                        
+                        <div class="progress">
+                            <div style="width: 70%" class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP / LARAVEL</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                                        
+                        <div class="progress">
+                            <div style="width: 80%" class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">WordPress</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                                        
+                        <div class="progress">
+                            <div style="width: 70%" class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">JAVASCRIPT / JQUERY</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                                        
+                        <div class="progress">
+                            <div style="width: 80%" class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">ANGULAR TYPESCRIPT</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                                        
+                        <div class="progress">
+                            <div style="width: 65%" class="progress-bar bg-secondary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio  -->
+        <div class="text-center mt-100" id="portfolio">
+            <h2 class="heading-secondary">
+                Portfolio
+            </h2>
+        </div>
+
+        <div class="main__services">
+            <div class="container-fluid" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center mb-2">
+                            <ul class="list-inline mb-4" id="portfolio-flters">
+                                <li class="btn-tabs btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                                <li class="btn-tabs btn btn-sm btn-outline-primary m-1" data-filter=".wordpress">Wordpress</li>
+                                <li class="btn-tabs btn btn-sm btn-outline-primary m-1" data-filter=".laravel">Laravel</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row portfolio-container">
+
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item wordpress">
+                            <img src="images/reptile-life.png" alt="" class="img-fluid rounded w-100 h-200">
+                            <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-between">
+                                <h6 class="text-center text-white mt-4">Reptile Life </h6>
+                                <a target="_blank" href="https://reptilelife.com.au/faqs/" class="mb-3 btn-custom btn-custom--green btn-custom--animated">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item wordpress">
+                            <img src="images/victorian-bird.png" alt="" class="img-fluid rounded w-100 h-200">
+                            <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-between">
+                                <h6 class="text-center text-white mt-4">Victorian Bird</h6>
+                                <a target="_blank" href="https://victorianbirdco.com.au/" class="mb-3 btn-custom btn-custom--green btn-custom--animated">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item wordpress">
+                            <img src="images/waterlife-aquarium.png" alt="" class="img-fluid rounded w-100 h-200">
+                            <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-between">
+                                <h6 class="text-center text-white mt-4">Waterlife Aquarium</h6>
+                                <a target="_blank" href="https://waterlifeaquarium.com.au/baby-pet-turtle-packages-melbourne/" class="mb-3 btn-custom btn-custom--green btn-custom--animated">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item wordpress">
+                            <img src="images/breeders-secret.png" alt="" class="img-fluid rounded w-100 h-200">
+                            <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-between">
+                                <h6 class="text-center text-white mt-4">Breeders Secret</h6>
+                                <a target="_blank" href="https://breederssecret.com.au/" class="mb-3 btn-custom btn-custom--green btn-custom--animated">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item wordpress">
+                            <img src="images/h2o-aquarium.png" alt="" class="img-fluid rounded w-100 h-200">
+                            <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-between">
+                                <h6 class="text-center text-white mt-4">H2o Pro Aquarium</h6>
+                                <a target="_blank" href="https://anthonyweb.tk/h2oproaquarium/fish-food/" class="mb-3 btn-custom btn-custom--green btn-custom--animated">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 portfolio-item laravel">
+                            <img src="images/smart-write.png" alt="" class="img-fluid rounded w-100 h-200">
+                            <div class="portfolio-btn bg-primary d-flex flex-column align-items-center justify-content-between">
+                                <h6 class="text-center text-white mt-4">Smart Write</h6>
+                                <a target="_blank" href="https://anthonyweb.tk/swproject" class="mb-3 btn-custom btn-custom--green btn-custom--animated">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5 mt-90 footer">
+
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="videos/video.mp4" type="video/mp4">
+            <source src="videos/video.webm" type="video/webm">
+            Your browser is not supported!
+        </video>
+    </div>
+
+    <div style="background-image: linear-gradient(to bottom, #7ed56f, #28b485);">
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-lg-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3 dark-grey-text">
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Fullstack Web Developer</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            Experience in web developing using PHP, Laravel, Wordpress and Angular Typescript.
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Top Skills</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>PHP / Laravel / Wordpress</p>
+          <p>HTML / CSS / JS / Jquery</p>
+          <p>Angular Typescript</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-lg-4 mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Olongapo City, Philippines</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> jomelisidro.1998@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +639273221531</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+  </footer>
+  <!-- Footer -->
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap-4.6/js/bootstrap.bundle.min.js"></script>
+    <script src="library/fontawesome/fontawesome.js"></script>
+    <script src="library/lightbox/lightbox.js"></script>
+    <script src="library/isotope/isotope.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
